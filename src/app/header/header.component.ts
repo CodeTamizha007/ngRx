@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppServiceService } from '../app-service.service';
 
 @Component({
   selector: 'app-header',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-
+  constructor(private service:AppServiceService){
+     this.service.login$().subscribe((value)=>{
+    
+      
+     })
+  }
 }

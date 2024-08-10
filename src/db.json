@@ -1,29 +1,34 @@
 {
-    "users":[
+    "user": {
+        "mailid": "abc@gmail.com",
+        "name": "sakthi",
+        "password": "sakthi"
+    },
+    "users": [
         {
-         "mailid":"abc@gmail.com",
-         "name":"sakthi",
-         "password":"sakthi"
+            "mailid": "abc@gmail.com",
+            "name": "sakthi",
+            "password": "sakthi"
         },
         {
-            "mailid":"abcd@gmail.com",
-            "name":"sakthi.v",
-            "password":"sakthi"
-           },
-           {
-            "mailid":"abcde@gmail.com",
-            "name":"sakthiprakash",
-            "password":"sakthi"
-           },
-           {
-            "mailid":"abcdefd@gmail.com",
-            "name":"sakthik",
-            "password":"sakthi"
-           },
-           {
-            "mailid":"abca@gmail.com",
-            "name":"sakthisiva",
-            "password":"sakthi"
-           }
+            "mailid": "abcd@gmail.com",
+            "name": "sakthi.v",
+            "password": "sakthi"
+        },
+        {
+            "mailid": "abcde@gmail.com",
+            "name": "sakthiprakash",
+            "password": "sakthi"
+        },
+        {
+            "mailid": "abcdefd@gmail.com",
+            "name": "sakthik",
+            "password": "sakthi"
+        },
+        {
+            "mailid": "abca@gmail.com",
+            "name": "sakthisiva",
+            "password": "sakthi"
+        }
     ]
 }

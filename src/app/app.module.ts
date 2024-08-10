@@ -10,6 +10,9 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { LoginComponent } from './login/login.component';
 import { CoursesComponent } from './courses/courses.component';
 import { FormsModule } from '@angular/forms';
+import * as fromAuth from './reducers'; 
+import * as Auth from './Authreducers'; 
+
 
 @NgModule({
   declarations: [
@@ -24,8 +27,10 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    StoreModule.forRoot({}, {}),
-    StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: !isDevMode() })
+    StoreModule.forRoot( fromAuth.reducers),
+    StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: !isDevMode() }),
+    StoreModule.forFeature(Auth.authFeatureKey,Auth.reducers),
+    StoreModule.forFeature("Courses",{})
   ],
   providers: [],
   bootstrap: [AppComponent]

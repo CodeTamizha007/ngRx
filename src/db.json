@@ -2,7 +2,10 @@
     "user": {
         "mailid": "abc@gmail.com",
         "name": "sakthi",
-        "password": "sakthi"
+        "password": "sakthi",
+        "phonenumber":7583847584,
+        "address":"xyz steets,chennai-600001"
+
     },
     "users": [
         {
@@ -30,5 +33,488 @@
             "name": "sakthisiva",
             "password": "sakthi"
         }
-    ]
+    ],
+    "courses": [
+        {
+          "name": "Angular",
+          "version": 18,
+          "description": "Learn Angular's latest features for building dynamic web applications, covering components, services, and best practices.",
+          "fees": 500,
+          "type": "paid",
+          "content": "advanced"
+        },
+        {
+          "name": "RxJS",
+          "version": 7,
+          "description": "Master reactive programming with RxJS, focusing on operators and stream management for better asynchronous handling.",
+          "fees": 300,
+          "type": "paid",
+          "content": "advanced"
+        },
+        {
+          "name": "Jasmine",
+          "version": 4,
+          "description": "Understand the Jasmine framework for unit testing JavaScript applications, with a focus on test-driven development.",
+          "fees": 0,
+          "type": "free",
+          "content": "basic"
+        },
+        {
+          "name": "Node.js",
+          "version": 14,
+          "description": "Build scalable server-side applications with Node.js, covering APIs, asynchronous programming, and database integration.",
+          "fees": 400,
+          "type": "paid",
+          "content": "advanced"
+        },
+        {
+          "name": "Express",
+          "version": 4,
+          "description": "Learn to create web applications using Express.js, including routing, middleware, and RESTful API development.",
+          "fees": 0,
+          "type": "free",
+          "content": "basic"
+        },
+        {
+          "name": "MongoDB",
+          "version": 5,
+          "description": "Master MongoDB for NoSQL database management, including schema design, queries, and performance optimization.",
+          "fees": 450,
+          "type": "paid",
+          "content": "advanced"
+        },
+        {
+          "name": "React",
+          "version": 18,
+          "description": "Learn React fundamentals and advanced concepts, including hooks, state management, and component-based architecture.",
+          "fees": 550,
+          "type": "paid",
+          "content": "advanced"
+        },
+        {
+          "name": "Vue.js",
+          "version": 3,
+          "description": "Get started with Vue.js, covering reactive data binding, components, and Vue CLI for efficient development.",
+          "fees": 300,
+          "type": "paid",
+          "content": "basic"
+        },
+        {
+          "name": "TypeScript",
+          "version": 4,
+          "description": "Understand TypeScript, focusing on static typing, interfaces, and advanced language features for large-scale applications.",
+          "fees": 250,
+          "type": "free",
+          "content": "advanced"
+        },
+        {
+          "name": "Python",
+          "version": 3.9,
+          "description": "Learn Python for web and software development, covering syntax, data structures, and popular libraries.",
+          "fees": 500,
+          "type": "paid",
+          "content": "advanced"
+        },
+        {
+          "name": "Django",
+          "version": 3.2,
+          "description": "Build web applications with Django, focusing on models, views, and templates for rapid development.",
+          "fees": 350,
+          "type": "paid",
+          "content": "advanced"
+        },
+        {
+          "name": "Flask",
+          "version": 2,
+          "description": "Get started with Flask for lightweight web development, covering routing, templates, and RESTful APIs.",
+          "fees": 0,
+          "type": "free",
+          "content": "basic"
+        },
+        {
+          "name": "Java",
+          "version": 11,
+          "description": "Master Java programming, covering object-oriented principles, data structures, and multithreading.",
+          "fees": 400,
+          "type": "paid",
+          "content": "advanced"
+        },
+        {
+          "name": "Spring Boot",
+          "version": 2.6,
+          "description": "Learn Spring Boot for rapid enterprise application development, focusing on microservices and REST APIs.",
+          "fees": 450,
+          "type": "paid",
+          "content": "advanced"
+        },
+        {
+          "name": "Hibernate",
+          "version": 5.4,
+          "description": "Understand Hibernate ORM for database operations in Java, including mapping, querying, and transactions.",
+          "fees": 0,
+          "type": "free",
+          "content": "basic"
+        },
+        {
+          "name": "Kotlin",
+          "version": 1.6,
+          "description": "Learn Kotlin for Android development, focusing on language features, interoperability, and modern coding practices.",
+          "fees": 250,
+          "type": "paid",
+          "content": "advanced"
+        },
+        {
+          "name": "Swift",
+          "version": 5.5,
+          "description": "Get started with Swift for iOS development, covering syntax, UI design, and app architecture.",
+          "fees": 600,
+          "type": "paid",
+          "content": "advanced"
+        },
+        {
+          "name": "Objective-C",
+          "version": 2,
+          "description": "Learn Objective-C for iOS development, with a focus on syntax, memory management, and app development.",
+          "fees": 0,
+          "type": "free",
+          "content": "basic"
+        },
+        {
+          "name": "Go",
+          "version": 1.16,
+          "description": "Master Go programming for backend development, covering concurrency, channels, and performance optimization.",
+          "fees": 500,
+          "type": "paid",
+          "content": "advanced"
+        },
+        {
+          "name": "Rust",
+          "version": 1.53,
+          "description": "Learn Rust for system programming, focusing on memory safety, concurrency, and performance.",
+          "fees": 350,
+          "type": "paid",
+          "content": "advanced"
+        },
+        {
+          "name": "C#",
+          "version": 9,
+          "description": "Understand C# for desktop and web applications, covering syntax, LINQ, and .NET Core.",
+          "fees": 400,
+          "type": "paid",
+          "content": "advanced"
+        },
+        {
+          "name": "ASP.NET",
+          "version": 5,
+          "description": "Build web applications with ASP.NET Core, focusing on MVC, Razor Pages, and Web APIs.",
+          "fees": 0,
+          "type": "free",
+          "content": "basic"
+        },
+        {
+          "name": "PHP",
+          "version": 8,
+          "description": "Learn PHP for web development, covering syntax, frameworks, and modern coding practices.",
+          "fees": 300,
+          "type": "paid",
+          "content": "basic"
+        },
+        {
+          "name": "Laravel",
+          "version": 8,
+          "description": "Build web applications with Laravel, focusing on routing, Eloquent ORM, and Blade templating.",
+          "fees": 450,
+          "type": "paid",
+          "content": "advanced"
+        },
+        {
+          "name": "Symfony",
+          "version": 5.3,
+          "description": "Master Symfony for enterprise-grade PHP applications, including bundles, services, and forms.",
+          "fees": 0,
+          "type": "free",
+          "content": "basic"
+        },
+        {
+          "name": "Ruby",
+          "version": 3,
+          "description": "Learn Ruby programming, covering syntax, object-oriented concepts, and scripting.",
+          "fees": 400,
+          "type": "paid",
+          "content": "advanced"
+        },
+        {
+          "name": "Ruby on Rails",
+          "version": 6,
+          "description": "Build web applications with Ruby on Rails, focusing on MVC architecture and rapid development.",
+          "fees": 500,
+          "type": "paid",
+          "content": "advanced"
+        },
+        {
+          "name": "Elixir",
+          "version": 1.12,
+          "description": "Learn Elixir for concurrent programming, covering syntax, processes, and fault-tolerant systems.",
+          "fees": 300,
+          "type": "free",
+          "content": "basic"
+        },
+        {
+          "name": "Phoenix",
+          "version": 1.5,
+          "description": "Build scalable web applications with Phoenix framework, leveraging Elixir's power for performance.",
+          "fees": 450,
+          "type": "paid",
+          "content": "advanced"
+        },
+        {
+          "name": "Scala",
+          "version": 2.13,
+          "description": "Master Scala programming for functional and object-oriented development, including Akka and Play framework.",
+          "fees": 350,
+          "type": "paid",
+          "content": "advanced"
+        },
+        {
+          "name": "Haskell",
+          "version": 8.10,
+          "description": "Learn Haskell for functional programming, focusing on pure functions, immutability, and type systems.",
+          "fees": 0,
+          "type": "free",
+          "content": "basic"
+        },
+        {
+          "name": "Elm",
+          "version": 0.19,
+          "description": "Understand Elm for front-end development, covering architecture, type safety, and functional design.",
+          "fees": 350,
+          "type": "paid",
+          "content": "advanced"
+        },
+        {
+          "name": "F#",
+          "version": 5,
+          "description": "Learn F# for functional programming in .NET, covering syntax, data types, and asynchronous workflows.",
+          "fees": 250,
+          "type": "free",
+          "content": "basic"
+        },
+        {
+          "name": "Clojure",
+          "version": 1.10,
+          "description": "Master Clojure for functional and concurrent programming, including data structures and immutability.",
+          "fees": 350,
+          "type": "paid",
+          "content": "advanced"
+        },
+        {
+          "name": "C++",
+          "version": 17,
+          "description": "Learn C++ for system programming, focusing on object-oriented design, memory management, and STL.",
+          "fees": 500,
+          "type": "paid",
+          "content": "advanced"
+        },
+        {
+          "name": "Perl",
+          "version": 5.34,
+          "description": "Understand Perl for scripting and text processing, including regular expressions, file handling, and CPAN modules.",
+          "fees": 0,
+          "type": "free",
+          "content": "basic"
+        },
+        {
+          "name": "Shell Scripting",
+          "version": 5,
+          "description": "Learn Shell Scripting for automating tasks in Unix-based systems, focusing on script writing and command-line tools.",
+          "fees": 250,
+          "type": "paid",
+          "content": "basic"
+        },
+        {
+          "name": "PowerShell",
+          "version": 7,
+          "description": "Master PowerShell for automating administrative tasks and managing Windows systems, including scripting and cmdlets.",
+          "fees": 400,
+          "type": "paid",
+          "content": "advanced"
+        },
+        {
+          "name": "R",
+          "version": 4.2,
+          "description": "Learn R programming for statistical analysis and data visualization, including data manipulation and statistical modeling.",
+          "fees": 0,
+          "type": "free",
+          "content": "basic"
+        },
+        {
+          "name": "MATLAB",
+          "version": 2023,
+          "description": "Understand MATLAB for numerical computing and data analysis, including matrix operations, simulations, and algorithm development.",
+          "fees": 450,
+          "type": "paid",
+          "content": "advanced"
+        },
+        {
+          "name": "SAS",
+          "version": 9.4,
+          "description": "Master SAS for advanced analytics, statistical analysis, and business intelligence, including data management and predictive modeling.",
+          "fees": 500,
+          "type": "paid",
+          "content": "advanced"
+        },
+        {
+          "name": "Tableau",
+          "version": 2023,
+          "description": "Learn Tableau for data visualization and business intelligence, focusing on dashboards, reports, and data connectivity.",
+          "fees": 300,
+          "type": "paid",
+          "content": "basic"
+        },
+        {
+          "name": "QlikView",
+          "version": 12,
+          "description": "Get started with QlikView for interactive data visualization, including data modeling, dashboard creation, and analytics.",
+          "fees": 250,
+          "type": "free",
+          "content": "basic"
+        },
+        {
+          "name": "Looker",
+          "version": 21,
+          "description": "Master Looker for data exploration and business intelligence, focusing on LookML, dashboards, and data modeling.",
+          "fees": 350,
+          "type": "paid",
+          "content": "advanced"
+        },
+        {
+          "name": "Snowflake",
+          "version": 2023,
+          "description": "Learn Snowflake for cloud-based data warehousing and analytics, including data integration, query optimization, and scaling.",
+          "fees": 400,
+          "type": "paid",
+          "content": "advanced"
+        },
+        {
+          "name": "Google BigQuery",
+          "version": 2023,
+          "description": "Understand Google BigQuery for large-scale data analysis, focusing on SQL queries, data storage, and performance tuning.",
+          "fees": 350,
+          "type": "paid",
+          "content": "advanced"
+        },
+        {
+          "name": "Apache Spark",
+          "version": 3.4,
+          "description": "Master Apache Spark for big data processing and analytics, including RDDs, DataFrames, and machine learning.",
+          "fees": 500,
+          "type": "paid",
+          "content": "advanced"
+        },
+        {
+          "name": "Hadoop",
+          "version": 3.3,
+          "description": "Learn Hadoop for distributed storage and processing of big data, focusing on HDFS, MapReduce, and YARN.",
+          "fees": 400,
+          "type": "paid",
+          "content": "advanced"
+        },
+        {
+          "name": "Docker",
+          "version": 24,
+          "description": "Get started with Docker for containerization, including creating, managing, and deploying containers and images.",
+          "fees": 0,
+          "type": "free",
+          "content": "basic"
+        },
+        {
+          "name": "Kubernetes",
+          "version": 1.27,
+          "description": "Master Kubernetes for container orchestration, focusing on deployments, scaling, and managing clusters.",
+          "fees": 450,
+          "type": "paid",
+          "content": "advanced"
+        },
+        {
+          "name": "Terraform",
+          "version": 1.4,
+          "description": "Learn Terraform for infrastructure as code, including provisioning, managing, and versioning cloud resources.",
+          "fees": 300,
+          "type": "paid",
+          "content": "advanced"
+        },
+        {
+          "name": "Ansible",
+          "version": 2.12,
+          "description": "Understand Ansible for configuration management and automation, including playbooks, roles, and inventory management.",
+          "fees": 250,
+          "type": "free",
+          "content": "basic"
+        },
+        {
+          "name": "Chef",
+          "version": 17,
+          "description": "Get started with Chef for configuration management, including writing cookbooks, recipes, and managing infrastructure.",
+          "fees": 350,
+          "type": "paid",
+          "content": "advanced"
+        },
+        {
+          "name": "Puppet",
+          "version": 7,
+          "description": "Learn Puppet for automating system administration tasks, including writing manifests and managing configurations.",
+          "fees": 400,
+          "type": "paid",
+          "content": "advanced"
+        },
+        {
+          "name": "AWS",
+          "version": 2024,
+          "description": "Master AWS for cloud computing, covering services like EC2, S3, Lambda, and cloud architecture best practices.",
+          "fees": 500,
+          "type": "paid",
+          "content": "advanced"
+        },
+        {
+          "name": "Azure",
+          "version": 2024,
+          "description": "Learn Microsoft Azure for cloud solutions, including virtual machines, storage, and networking services.",
+          "fees": 450,
+          "type": "paid",
+          "content": "advanced"
+        },
+        {
+          "name": "Google Cloud",
+          "version": 2024,
+          "description": "Understand Google Cloud Platform, focusing on services like Compute Engine, Cloud Storage, and BigQuery.",
+          "fees": 400,
+          "type": "paid",
+          "content": "advanced"
+        },
+        {
+          "name": "Salesforce",
+          "version": 2024,
+          "description": "Learn Salesforce for CRM and cloud-based business applications, including customization, automation, and app development.",
+          "fees": 350,
+          "type": "paid",
+          "content": "advanced"
+        },
+        {
+          "name": "Tableau",
+          "version": 2023,
+          "description": "Explore Tableau for interactive data visualization, including dashboard creation, data connections, and advanced analytics.",
+          "fees": 300,
+          "type": "paid",
+          "content": "basic"
+        },
+        {
+          "name": "Power BI",
+          "version": 2024,
+          "description": "Master Power BI for business intelligence and data visualization, focusing on reports, dashboards, and data modeling.",
+          "fees": 350,
+          "type": "paid",
+          "content": "advanced"
+        }
+      ]
+      
 }

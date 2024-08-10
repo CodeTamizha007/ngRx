@@ -1,3 +1,10 @@
+
+
+#Add Redux devTool extension
+
+https://chromewebstore.google.com/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en
+
+
 # TestingApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.11.

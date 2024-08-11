@@ -9,8 +9,8 @@
          
         </ul>
         <a class="nav-link d-flex me-3" (click)="navigateTOcourses()"  style="font-size: large;" >Course</a>
-            <a class="nav-link d-flex me-3" *ngIf='!isLogin' (click)="navigateTOLogin()" style="font-size: large;">Login</a>
-            <a class="nav-link d-flex me-3" *ngIf='isLogin' (click)="navigateTOLogin()" style="font-size: large;">Logout</a>
+            <a class="nav-link d-flex me-3" *ngIf='isLogin | async' (click)="navigateTOLogin()" style="font-size: large;">Login</a>
+            <a class="nav-link d-flex me-3" *ngIf='isLogout | async' (click)="navigateTOLogin()" style="font-size: large;">Logout</a>
 
         
         <form class="d-flex" role="search">

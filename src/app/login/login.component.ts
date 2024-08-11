@@ -4,6 +4,7 @@ import { Store } from '@ngrx/store';
 import * as actions from '.././auth.actions'
 import { tap } from 'rxjs/operators';
 import { noop } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -11,9 +12,12 @@ import { noop } from 'rxjs';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  model: any = {};
-  constructor(private service:AppServiceService,private store:Store){}
-a={name:"fsdf"}
+  model: any = {
+    username:"sakthi",
+    password:"sakthi"
+  };
+  constructor(private service:AppServiceService,private store:Store,private router:Router){}
+
   onSubmit() {
     console.log('Form Submitted!', this.model);
     this.store.dispatch({type:"inbuild action",payload:{user:"hjn"},header:"hj",jj:"hj"})
@@ -28,7 +32,7 @@ a={name:"fsdf"}
 
 
     )
-    
+    this.router.navigateByUrl("courses")
     // Here you would typically handle the form submission, e.g., make an HTTP request
   }
 

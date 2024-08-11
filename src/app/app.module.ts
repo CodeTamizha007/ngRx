@@ -29,8 +29,8 @@ import * as Auth from './Authreducers';
     HttpClientModule,
     StoreModule.forRoot( fromAuth.reducers),
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: !isDevMode() }),
-    StoreModule.forFeature(Auth.authFeatureKey,Auth.reducers),
-    StoreModule.forFeature("Courses",{})
+    StoreModule.forFeature(Auth.authFeatureKey,Auth.authLogin),
+    StoreModule.forFeature("Courses",Auth.courses)
   ],
   providers: [],
   bootstrap: [AppComponent]

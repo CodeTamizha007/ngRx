@@ -30,7 +30,7 @@ export interface Course {
 
 
 export interface LoginDate {
-  mailid:string,
-  name:string
-  password:string
+  mailid:string;
+  name:string;
+  password:string;
 }

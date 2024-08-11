@@ -9,7 +9,7 @@ import {
   on
 } from '@ngrx/store';
 import { Course, LoginDate } from '../app-service.service';
-import { course, login, logout } from '../auth.actions';
+import { course, login, logout } from './auth.actions';
 import { Action } from 'rxjs/internal/scheduler/Action';
 
 export const authFeatureKey = 'auth';

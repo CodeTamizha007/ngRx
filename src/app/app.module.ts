@@ -12,6 +12,8 @@ import { CoursesComponent } from './courses/courses.component';
 import { FormsModule } from '@angular/forms';
 import * as fromAuth from './reducers'; 
 import * as Auth from './Authreducers'; 
+import { EffectsModule, EffectsRootModule } from '@ngrx/effects';
+import { AuthEffects } from './Authreducers/Auth.effects';
 
 
 @NgModule({
@@ -30,7 +32,9 @@ import * as Auth from './Authreducers';
     StoreModule.forRoot( fromAuth.reducers),
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: !isDevMode() }),
     StoreModule.forFeature(Auth.authFeatureKey,Auth.authLogin),
-    StoreModule.forFeature("Courses",Auth.courses)
+    StoreModule.forFeature("Courses",Auth.courses),
+    EffectsModule.forRoot([]),
+    EffectsModule.forFeature([AuthEffects])
   ],
   providers: [],
   bootstrap: [AppComponent]

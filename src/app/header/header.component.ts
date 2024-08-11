@@ -3,7 +3,7 @@ import { AppServiceService } from '../app-service.service';
 import { Router } from '@angular/router';
 import { select, Store } from '@ngrx/store';
 import { distinctUntilChanged, map, Observable, tap } from 'rxjs';
-import * as action from '../auth.actions'
+import * as action from '../Authreducers/auth.actions'
 import { login } from '../Authreducers/auth.selectors';
 
 @Component({

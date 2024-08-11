@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { AppServiceService } from '../app-service.service';
 import { Store } from '@ngrx/store';
-import * as actions from '.././auth.actions'
+import * as actions from '../Authreducers/auth.actions'
 import { tap } from 'rxjs/operators';
 import { noop } from 'rxjs';
 import { Router } from '@angular/router';

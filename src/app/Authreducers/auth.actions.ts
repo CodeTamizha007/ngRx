@@ -1,5 +1,5 @@
 import { createAction, props } from "@ngrx/store";
-import { Course, LoginDate } from "./app-service.service";
+import { Course, LoginDate } from "../app-service.service";
 
 
 

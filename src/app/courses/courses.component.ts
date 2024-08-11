@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { AppServiceService, Course } from '../app-service.service';
 import { noop, tap } from 'rxjs';
 import { Store } from '@ngrx/store';
-import * as action from '.././auth.actions'
+import * as action from '../Authreducers/auth.actions'
 
 @Component({
   selector: 'app-courses',

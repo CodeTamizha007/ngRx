@@ -1,16 +1,36 @@
-import { NgModule } from '@angular/core';
+import { NgModule, isDevMode } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HeaderComponent } from './header/header.component';
+import { StoreModule } from '@ngrx/store';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { LoginComponent } from './login/login.component';
+import { CoursesComponent } from './courses/courses.component';
+import { FormsModule } from '@angular/forms';
+import * as fromAuth from './reducers'; 
+import * as Auth from './Authreducers'; 
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    LoginComponent,
+    CoursesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+    StoreModule.forRoot( fromAuth.reducers),
+    StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: !isDevMode() }),
+    StoreModule.forFeature(Auth.authFeatureKey,Auth.authLogin),
+    StoreModule.forFeature("Courses",Auth.courses)
   ],
   providers: [],
   bootstrap: [AppComponent]

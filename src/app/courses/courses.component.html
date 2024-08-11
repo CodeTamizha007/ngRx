@@ -1,0 +1,17 @@
+<div class="card-container">
+    <div *ngFor="let course of courses$" class="card">
+      <div class="card-header">
+        <h2>{{ course.name }}</h2>
+        <span class="version">Version: {{ course.version }}</span>
+      </div>
+      <div class="card-body">
+        <p class="description">{{ course.description }}</p>
+        <div class="details">
+          <p><strong>Fees:</strong> {{ course.fees | currency:'INR':'symbol'}}</p>
+          <p><strong>Type:</strong> {{ course.type | titlecase }}</p>
+          <p><strong>Content Level:</strong> {{ course.content | titlecase }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  

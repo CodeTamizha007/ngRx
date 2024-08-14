@@ -1,5 +1,9 @@
 import { Injectable } from "@angular/core";
-import { Actions } from "@ngrx/effects";
+import { Actions, createEffect, ofType } from "@ngrx/effects";
+import { concatMap, map, tap } from "rxjs/operators";
+import { courseaction, courseAPi, login } from "./auth.actions";
+import { Store } from "@ngrx/store";
+import { AppServiceService } from "../app-service.service";
 
 
 
@@ -8,15 +12,24 @@ import { Actions } from "@ngrx/effects";
 
 @Injectable()
 export class AuthEffects {
-    constructor(private action$:Actions){
+    constructor(private action$:Actions,private store:Store,private service:AppServiceService){ }
+    coursea$ = createEffect(()=>
+        this.action$.pipe(
+            ofType(courseaction),
+            concatMap(()=>this.service.courses$()),
+            map(courses=>courseAPi({courses}))
+        )
 
-
-        this.action$.subscribe((action:any)=>{
-            if(action.type=="[login Component] Login action"){
-                localStorage.setItem("user",JSON.stringify(action["user"]))
-            }
+    )
+     login$= createEffect(()=>
+    this.action$.pipe(
+        ofType(login),
+        tap((action:any)=>{
+                    localStorage.setItem("user",JSON.stringify(action["user"]))
+            
         })
-    }
+    ),{dispatch:false})
+    
 
 
 }

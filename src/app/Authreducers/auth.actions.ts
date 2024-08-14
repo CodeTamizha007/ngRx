@@ -12,7 +12,11 @@ export const logout = createAction(
     "[Header Component] logout action"
 )
 
-export const course =createAction(
-    "[Course Component] Courses",
+export const courseaction =createAction(
+    "[Course Component] Courses Action"
+)
+  
+export const courseAPi =createAction(
+    "[Course Component] Courses API call",
     props<{courses:Array<Course>}>()
 )

@@ -9,7 +9,7 @@ import {
   on
 } from '@ngrx/store';
 import { Course, LoginDate } from '../app-service.service';
-import { course, login, logout } from './auth.actions';
+import { courseAPi, login, logout } from './auth.actions';
 import { Action } from 'rxjs/internal/scheduler/Action';
 
 export const authFeatureKey = 'auth';
@@ -32,7 +32,7 @@ export const authLogin = createReducer(initaildata,
    on(logout,(state,action)=>{return{user:undefined}})
   )
 
-export const courses = createReducer(coureseinitialdata,
-  on(course,(state,action)=>{return {courses:action.courses}}))
+// export const courses = createReducer(coureseinitialdata,
+//   on(courseAPi,(state,action)=>{return {courses:action.courses}}))
 
 

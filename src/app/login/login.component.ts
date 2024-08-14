@@ -20,7 +20,7 @@ export class LoginComponent {
 
   onSubmit() {
     console.log('Form Submitted!', this.model);
-    this.store.dispatch({type:"inbuild action",payload:{user:"hjn"},header:"hj",jj:"hj"})
+    //this.store.dispatch({type:"inbuild action",payload:{user:"hjn"},header:"hj",jj:"hj"})
     this.service.login$().pipe(
       tap((user)=>{
     this.store.dispatch(actions.login({user}));

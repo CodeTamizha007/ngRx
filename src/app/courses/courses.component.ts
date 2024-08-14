@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import { AppServiceService, Course } from '../app-service.service';
 import { noop, tap } from 'rxjs';
-import { Store } from '@ngrx/store';
+import { select, Store } from '@ngrx/store';
 import * as action from '../Authreducers/auth.actions'
+import { courses } from '../Authreducers/auth.selectors';
 
 @Component({
   selector: 'app-courses',
@@ -10,17 +11,15 @@ import * as action from '../Authreducers/auth.actions'
   styleUrls: ['./courses.component.css']
 })
 export class CoursesComponent {
-  courses$!:Array<Course>;
+  courses$
   constructor(private service:AppServiceService,private store:Store){
-   
-    this.service.courses$().pipe(
-      tap((course)=>{this.store.dispatch(action.course({courses:course}))
-      })
-    ).subscribe(
-      (val)=>{
-        this.courses$=val;
-      }
+     
+    this.store.dispatch(action.courseaction())
+    this.courses$=this.store.pipe(
+      select(courses)
     )
+
+    
     //this.store.pipe(tap((val)=>{this.courses$=val?.Course})).subscribe()//this.courses$=val.Course});
   }
 

@@ -14,6 +14,7 @@ import * as fromAuth from './reducers';
 import * as Auth from './Authreducers'; 
 import { EffectsModule, EffectsRootModule } from '@ngrx/effects';
 import { AuthEffects } from './Authreducers/Auth.effects';
+import { coursereducer } from './Authreducers/auth.entity';
 
 
 @NgModule({
@@ -32,7 +33,7 @@ import { AuthEffects } from './Authreducers/Auth.effects';
     StoreModule.forRoot( fromAuth.reducers),
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: !isDevMode() }),
     StoreModule.forFeature(Auth.authFeatureKey,Auth.authLogin),
-    StoreModule.forFeature("Courses",Auth.courses),
+    StoreModule.forFeature("Courses",coursereducer),
     EffectsModule.forRoot([]),
     EffectsModule.forFeature([AuthEffects])
   ],
